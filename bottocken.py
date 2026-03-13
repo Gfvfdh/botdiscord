@@ -33,7 +33,7 @@ log = logging.getLogger("GuardBot")
 
 @dataclass
 class Config:
-    token      : str           = os.getenv("DISCORD_TOKEN", "w")
+    token      : str           = os.getenv("DISCORD_TOKEN", "MTQ4MTc3ODE1MzA0NjQwOTMzOA.G8yJMh.BOL5mD_SXj5l0wLKOb4Z1a4FKJnvbL3xOPn-mg")
     prefix     : str           = "!"
     log_channel: Optional[int] = int(os.getenv("LOG_CHANNEL", "0")) or None
     mute_role  : Optional[int] = int(os.getenv("MUTE_ROLE",   "0")) or None
@@ -724,3 +724,4 @@ if __name__ == "__main__":
         raise SystemExit(1)
     log.info("Démarrage de GuardBot v2…")
     bot.run(cfg.token, log_handler=None)
+
