@@ -1,0 +1,5 @@
+# Discord bot — dépendances Python
+# Python 3.10+ recommandé
+
+discord.py>=2.3.0,<3
+aiohttp>=3.9.0,<4
